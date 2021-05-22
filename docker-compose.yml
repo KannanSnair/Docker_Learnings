@@ -1,0 +1,18 @@
+version: '3'
+services:
+  frontend:
+        image: "my-docker-frontend-service"
+        container_name: frontend_test
+        ports:
+             - 5000:5000
+        network_mode: host
+        healthcheck:
+          test: "exit 0"
+  backend:
+        image: "my-docker-backend-service"
+        container_name: backend_test
+        ports:
+             - 6000:6000
+        network_mode: localhost
+        healthcheck:
+          test: "exit 0"
