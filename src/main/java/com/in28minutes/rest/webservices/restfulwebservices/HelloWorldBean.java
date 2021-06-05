@@ -1,6 +1,12 @@
 package com.in28minutes.rest.webservices.restfulwebservices;
 
-public class HelloWorldBean {
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.EnvironmentAware;
+import org.springframework.core.env.Environment;
+
+public class HelloWorldBean implements EnvironmentAware {
 
 	private String message;
 
@@ -20,5 +26,11 @@ public class HelloWorldBean {
 	public String toString() {
 		return String.format("HelloWorldBean [message=%s]", message);
 	}  
+
+	@Override
+	public void setEnvironment(Environment environment) {
+		
+		
+	}
 
 }
