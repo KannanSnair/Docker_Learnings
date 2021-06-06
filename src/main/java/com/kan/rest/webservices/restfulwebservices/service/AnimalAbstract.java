@@ -1,4 +1,4 @@
-package com.in28minutes.rest.webservices.restfulwebservices.service;
+package com.kan.rest.webservices.restfulwebservices.service;
 
 public abstract class AnimalAbstract {
 
