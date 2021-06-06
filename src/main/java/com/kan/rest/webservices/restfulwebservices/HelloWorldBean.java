@@ -1,4 +1,4 @@
-package com.in28minutes.rest.webservices.restfulwebservices;
+package com.kan.rest.webservices.restfulwebservices;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
