@@ -8,16 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 import com.kan.rest.webservices.restfulwebservices.service.AnimalAbstract;
 import com.kan.rest.webservices.restfulwebservices.service.Car;
 import com.kan.rest.webservices.restfulwebservices.service.Cat;
-import com.kan.rest.webservices.restfulwebservices.service.ServiceClass1;
+import com.kan.rest.webservices.restfulwebservices.service.Engine;
 
 @RestController
 public class HelloWorldController {
 
 	@Autowired
 	Car carBean;
-	
-	@Autowired
-	ServiceClass1 obj;
 	
 	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
@@ -51,6 +48,6 @@ public class HelloWorldController {
 	
 	@GetMapping(path="/getcardetails-1")
 	public String getDetails() {
-		return obj.getCarDetails();
+		return carBean.engine.toString();
 	}
 }

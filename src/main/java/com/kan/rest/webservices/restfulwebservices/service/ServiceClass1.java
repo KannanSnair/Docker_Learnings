@@ -10,6 +10,7 @@ public class ServiceClass1 {
 	SpringVehicleBean carBean;
 
 	public String getCarDetails() {
-		return carBean.getCarBean().toString();
+		return carBean.getCarBean().toString() + "--EngineDetails:: "+ carBean.getEngine().toString();
 	}
+
 }

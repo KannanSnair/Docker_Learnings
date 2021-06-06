@@ -1,10 +1,16 @@
 package com.kan.rest.webservices.restfulwebservices.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 public class Car {
 
 	private String model;
 	private String fourWheelDrive;
 	private String varient;
+
+	@Autowired
+	public Engine engine;
 
 	public Car(String model, String fourWheelDrive, String varient) {
 		this.model = model;
