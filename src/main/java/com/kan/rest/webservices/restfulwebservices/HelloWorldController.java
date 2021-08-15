@@ -21,11 +21,11 @@ public class HelloWorldController {
 		return "Hello World";
 	}
 
-	@GetMapping(path = "/hello-world-bean")
+	@GetMapping(path = "/hello-world-bean1")
 	public HelloWorldBean helloWorldBean() {
 		// throw new RuntimeException("Some Error has Happened! Contact Support at
 		// ***-***");
-		return new HelloWorldBean("Hello World");
+		return new HelloWorldBean("Hello World1");
 	}
 
 	@GetMapping(path = "/hello-world/path-variable/{name}")
